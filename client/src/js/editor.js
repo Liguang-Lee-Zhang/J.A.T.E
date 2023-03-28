@@ -33,6 +33,7 @@ export default class {
     });
 
     this.editor.on('change', () => {
+      console.log("this is message");
       localStorage.setItem('content', this.editor.getValue());
     });
 
