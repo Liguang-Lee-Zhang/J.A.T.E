@@ -30,7 +30,7 @@ export default class {
       console.log(data);
       console.log(data[0].content);
       console.log(localData);
-      this.editor.setValue(data || localData || header);
+      this.editor.getDoc().setValue(data || localData || header);
     });
 
     this.editor.on('change', () => {
